@@ -100,38 +100,19 @@
 
 :cuadrado
    echo --cuadrado--
-   set /p number1="Lado del cuadrado:"
-   set /a cuadrado=%number1% * %number1%
-   echo El area del cuadrado es: %cuadrado%
-   pause
-   goto start
+   
 
 :rectangle
    echo --rectangulo--
-   set /p number1="Medida de la base:"
-   set /p number2="Medida de la altura:"
-   set /a rectangle=%number1% * %number2%
-   echo El area del triangulo es: %rectangle%
-   pause
-   goto start
+   
 
 :triangulo
    echo --triangulo--
-   set /p number1="Ingrese la base del triangulo:"
-   set /p number2="Ingrese la altura dek triangulo:"
-   set /a triangulo=(%number1% * %number2%) / 2
-   echo El area del triangulo es: %triangulo%
-   pause
-   goto start
+   
 
 :circulo
    echo --circulo--
-   set /p number1="Ingrese el radio del circulo:"
-   set "pi=3.1416"
-   set /a area_circulo=(%number1% * %number1% * 31416) / 10000
-   echo El area del circulo es: %area_circulo%
-   pause
-   goto start
+   
 
 :finish
    echo Salir 
