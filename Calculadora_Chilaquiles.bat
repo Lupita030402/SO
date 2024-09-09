@@ -11,15 +11,15 @@
    cls
    echo Selecciona una opcion:
    echo.
-   echo 1. Suma - J
-   echo 2. Resta - I
-   echo 3. Division - D
-   echo 4. Multiplicacion - JA
-   echo 5. Potencia - J
-   echo 6. Area Cuadrado - I
-   echo 7. Area Rectangulo - D
-   echo 8. Area Triangulo - JA
-   echo 9. Area Circulo - J
+   echo 1. Suma 
+   echo 2. Resta
+   echo 3. Division
+   echo 4. Multiplicacion
+   echo 5. Potencia
+   echo 6. Area Cuadrado 
+   echo 7. Area Rectangulo
+   echo 8. Area Triangulo
+   echo 9. Area Circulo
    echo 10. Salir
 
    set /p option="Elije el numero de la opcion que quieres:"
@@ -100,7 +100,11 @@
 
 :cuadrado
    echo --cuadrado--
-   
+   set /p number1="Ingresa la medida de un lado del cuadrado:"
+   set /a cuadrado=%number1% * %number1%
+   echo El area del cuadrado es: %cuadrado%
+   pause
+   goto start
 
 :rectangle
    echo --rectangulo--
