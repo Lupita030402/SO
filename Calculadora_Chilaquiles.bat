@@ -100,7 +100,12 @@
 
 :cuadrado
    echo --cuadrado--
-   
+   set /p number1="Ingrese la medida de un lado del cuadrado:"
+   set /a mult=%number1% * %number1%
+   echo El area es: %cuadrado%
+   pause
+   goto start
+
 
 :rectangle
    echo --rectangulo--
